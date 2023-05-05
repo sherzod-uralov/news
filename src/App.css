@@ -1,0 +1,137 @@
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card{
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.card img{
+  width: 100%;
+  border-radius: 5px;
+  height: 600px;
+}
+.nav_logo-span{
+  color: rgb(0, 129, 189);
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav{
+  background-color: #282c34;
+  margin-bottom: 40px;
+  padding: 5px 0px;
+}
+.nav ul{
+  column-gap: 35px;
+  display: flex;
+  list-style: none;
+}
+.nav ul li a{
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+.h2{
+  font-family: sans-serif;
+  font-size: 26px;
+}
+.date{
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+.card a{
+  color: rgb(75, 75, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+.card h3{
+  text-align: center;
+  font-size: 22px;
+}
+.card p{
+  font-size: 19px;
+  text-align: center;
+}
+.loader {
+  width: 64px;
+  height: 64px;
+  top: 100px;
+  z-index: 10;
+  position: relative;
+  background-image:
+    linear-gradient(#000000 16px, transparent 0) ,
+    linear-gradient(#FF3D00 16px, transparent 0) ,
+    linear-gradient(#FF3D00 16px, transparent 0) ,
+    linear-gradient(#000000 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top , left bottom , right top , right bottom;
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(0deg)
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg)
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(360deg)
+  }
+}
+
+@media (max-width:578px){
+  .card img{
+    height: 250px;
+  }
+}
